@@ -1,0 +1,30 @@
+<section>
+    <div class="container mt-5">
+
+      <div class="row mt-5">
+    <a href="/admin/add-movie" class="btn btn-success ml-auto" >Add Movie</a>
+  </div>
+  <div class="row mt-5"> <table class="table mt-5">
+  <thead>
+    <tr>
+      <th scope="col">NO</th>
+      <th scope="col">NAME</th>
+      <th scope="col">GENERE</th>
+      <th scope="col">IMAGE</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each products}}
+    <tr>
+      <th></th>
+      <th scope="row">1</th>
+      <td>{{this.name}}</td>
+      <td>{{this.genere}}</td>
+      <td><img style="width: 80px;height: 80px;" src="{{this.Image}}"></td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+   </div>
+       
+</section>
